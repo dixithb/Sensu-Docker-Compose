@@ -13,7 +13,7 @@ Docker compose will bring up 3 containers:
 ## Installation
 
 ```
-git clone git@github.com:venoodkhatuva12/Docker-Compose-Sensu.git
+git clone git@github.com/dixithb/Sensu-Docker-Compose.git
 ```
 
 ## How To Run
