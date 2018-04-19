@@ -24,6 +24,7 @@ RUN cd /opt/sensu/embedded/bin \
  && sensu-install -p vmstats \  
  && sensu-install -p mailer 
 
+
 # Sensu server
 ADD ./config-files/sensu.repo /etc/yum.repos.d/
 RUN yum install -y sensu
@@ -46,13 +47,6 @@ RUN cd /opt/sensu/embedded/bin \
  && sensu-install -p load-checks \
  && sensu-install -p vmstats \
  && sensu-install -p mailer
-
-# Sensu server
-ADD ./config-files/sensu.repo /etc/yum.repos.d/
-RUN yum install -y sensu
-ADD ./config-files/config.json /etc/sensu/
-ADD ./config-files/client.json /etc/sensu/
-ADD ./config-files/transport.json /etc/sensu/
 
 RUN yum install -y uchiwa
 ADD ./config-files/uchiwa.json /etc/sensu/
