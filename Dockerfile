@@ -1,4 +1,4 @@
-FROM oraclelinux:6.9
+FROM oraclelinux
 
 MAINTAINER Dixith dixithbura@gmail.com
 
